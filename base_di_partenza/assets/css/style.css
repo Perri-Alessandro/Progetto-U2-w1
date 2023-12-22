@@ -24,7 +24,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 32%;
+  width: 36%;
+}
+.navDx p {
+  margin-left: 2%;
 }
 .navDx a {
   text-decoration: none;
@@ -33,6 +36,7 @@ header {
   color: whitesmoke;
   padding: 2.5% 4%;
   text-align: center;
+  margin-left: 2%;
 }
 .headerBottom {
   border-top: #373737 solid 1px;
@@ -132,9 +136,9 @@ main {
   flex-wrap: wrap;
 }
 .borderMain {
-  border-bottom: #c5c5c5 solid 1px;
-  margin-left: -100px;
-  margin-right: -100px;
+  border-bottom: #d0d0d0 solid 1px;
+  margin-left: -88px;
+  margin-right: -88px;
   margin-bottom: 4%;
 }
 .secondaSezione {
@@ -143,7 +147,7 @@ main {
 }
 .secondiArticle {
   display: flex;
-  margin-bottom: 2%;
+  margin-bottom: 6%;
   align-items: center;
   justify-content: space-between;
 }
@@ -155,12 +159,14 @@ main {
   margin-left: 2%;
   margin-right: 2%;
   align-self: baseline;
+  width: 100%;
 }
 .immagini {
   display: flex;
 }
 .immagini img {
   max-width: 200px;
+  margin-left: 5%;
 }
 .parteBassa {
   margin-top: 1%;
@@ -182,9 +188,33 @@ main {
 .secondaSezione .parteAlta .autore {
   margin-left: 1%;
 }
-.secondaSezione .parteAlta {
+.secondaSezione .parteAlta,
+.parteBassa {
   margin-bottom: 2%;
 }
 .testoSection2 .nomeArticolo {
   margin-bottom: 1%;
+}
+.testoSection2 .data {
+  font-size: 65%;
+}
+.sezioneDx {
+  text-align: center;
+  font-size: 60%;
+  width: 45%;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  height: 3vh;
+}
+.sezioneDx div {
+  color: #818181;
+  border-bottom: #d0d0d0 solid 1px;
+}
+.sezioneDx h6 {
+  color: #818181;
+}
+,
+.sezioneDx p {
+  color: #818181;
 }
