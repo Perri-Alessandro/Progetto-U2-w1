@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Spectral:wght@300;400;600;700&display=swap");
 
+/* io mi sono perso troppo a capire come fare le stelline all'inizio, poi mi sono incartatato circa un'ora tra mille div flex */
+
 body {
   color: #191919;
   font-family: "Spectral", serif;
