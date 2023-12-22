@@ -3,8 +3,10 @@
 body {
   color: #191919;
   font-family: "Spectral", serif;
-  cursor: pointer;
   font-size: 105%;
+}
+a {
+  cursor: pointer;
 }
 header {
   font-family: "Roboto", sans-serif;
@@ -81,7 +83,6 @@ main {
 }
 .primiArticle {
   display: flex;
-  /* align-items: baseline; */
   flex: 27%;
   margin-bottom: 4%;
 }
@@ -128,4 +129,61 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.borderMain {
+  border-bottom: #c5c5c5 solid 1px;
+  margin-left: -100px;
+  margin-right: -100px;
+  margin-bottom: 4%;
+}
+.secondaSezione {
+  display: flex;
+  justify-content: space-between;
+}
+.secondiArticle {
+  display: flex;
+  margin-bottom: 2%;
+  align-items: center;
+  justify-content: space-between;
+}
+.testoSection2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 11vh;
+  margin-left: 2%;
+  margin-right: 2%;
+  align-self: baseline;
+}
+.immagini {
+  display: flex;
+}
+.immagini img {
+  max-width: 200px;
+}
+.parteBassa {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parteAlta {
+  margin-top: 2%;
+}
+.parteBassaSx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parteBassaDx {
+  display: flex;
+}
+.secondaSezione .parteAlta .autore {
+  margin-left: 1%;
+}
+.secondaSezione .parteAlta {
+  margin-bottom: 2%;
+}
+.testoSection2 .nomeArticolo {
+  margin-bottom: 1%;
 }
