@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Spectral:wght@300;400;600;700&display=swap");
 
-/* io mi sono perso troppo a capire come fare le stelline all'inizio, poi mi sono incartatato circa un'ora tra mille div flex */
+/* Mi sono perso troppo a capire come fare le stelline all'inizio, poi mi sono incartatato circa un'ora tra mille div flex */
 
 body {
   color: #191919;
@@ -14,22 +14,38 @@ header {
   font-family: "Roboto", sans-serif;
   background-color: #ffc017;
 }
+nav {
+  position: relative;
+}
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1% 7.5%;
+  border-bottom: #373737 solid 1px;
+  position: fixed;
+  z-index: 1;
+  transition: 0.6s;
+  top: 0;
+  background-color: #ffc017;
+  width: 85%;
+}
+.nav.scrolled {
+  background-color: whitesmoke;
+}
+#buttonNav.scrolled {
+  background-color: green;
 }
 .navDx {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 36%;
+  width: 40%;
 }
 .navDx p {
   margin-left: 2%;
 }
-.navDx a {
+#buttonNav {
   text-decoration: none;
   border-radius: 40px;
   background-color: #191919;
@@ -37,15 +53,15 @@ header {
   padding: 2.5% 4%;
   text-align: center;
   margin-left: 2%;
+  transition: 0.6s;
 }
 .headerBottom {
-  border-top: #373737 solid 1px;
   border-bottom: #8f8f8f solid 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 7.5%;
-  padding-top: 1%;
+  padding-top: 85px;
   padding-bottom: 0.5%;
 }
 .headerDxM p {
@@ -137,8 +153,8 @@ main {
 }
 .borderMain {
   border-bottom: #d0d0d0 solid 1px;
-  margin-left: -88px;
-  margin-right: -88px;
+  margin-left: -8.5%;
+  margin-right: -8.5%;
   margin-bottom: 4%;
 }
 .secondaSezione {
@@ -196,52 +212,55 @@ main {
   margin-bottom: 1%;
 }
 .testoSection2 .data {
-  font-size: 65%;
+  font-size: 75%;
 }
 .sezioneDx {
   text-align: center;
-  font-size: 60%;
-  width: 48%;
-
+  font-size: 90%;
+  width: 38%;
   display: flex;
   flex-direction: column;
-  height: 3vh;
+  justify-content: start;
+  position: sticky;
+  height: 4vh;
+  top: 90px;
+}
+.secondaSezione {
+  position: relative;
 }
 .sezioneDx div:nth-child(2) {
-  border-bottom: #dbdbdb solid 1px;
-  margin: 1% 22.5%;
+  border-bottom: #e3e3e3 solid 1px;
+  margin: 1% 19%;
 }
 .sezioneDx h6 {
   color: #9b9b9b;
 }
 .sezioneDx .p p {
   color: #9b9b9b;
-  border: #dfdfdf solid 1px;
-  padding: 2%;
-  font-size: 90%;
+  border: #e3e3e3 solid 1px;
+  padding: 2.5%;
+  font-size: 80%;
   margin: 1% 1%;
 }
 .p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 2%;
+  padding: 1.5%;
 }
 .sezioneDx h2 {
-  font-size: 105%;
+  font-size: 114%;
   font-weight: 700;
 }
 .sezioneDx h6 {
-  padding: 2%;
+  padding: 1.5%;
   width: 10%;
   display: inline-block;
 }
 .h6 {
-  margin-left: 62px;
-  margin-right: 62px;
+  margin-left: 100px;
+  margin-right: 30px;
   margin-top: 1%;
+  text-align: left;
+  font-size: 80%;
 }
-/* .nav {
-  position: fixed;
-  top: 0;
-} */
