@@ -24,7 +24,7 @@ const testo = m.innerText.replace(/\s+/g, ""); // Ottiengo il testo senza spazi 
 const arrayM = testo.split(""); // Converto il testo in un array di singoli caratteri
 console.log("Creato array per animazione M", arrayM);
 
-// Animazine colore navBar a scroll
+// Animazine colore navBar e suo Bottone a scroll
 window.addEventListener("scroll", function () {
   const navFixed = document.querySelector(".nav");
   const navButton = document.getElementById("buttonNav");
